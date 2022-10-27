@@ -21,7 +21,10 @@ client.on("message", (message) => {
         message.channel.send(`https://github.com/gitClaudius`);
         message.delete();
     }
-    
+    if (message.content === "!Linkedin" || message.content === "!linkedin") {
+        message.channel.send(`https://www.linkedin.com/in/claudius-zensen-5601041b9/`);
+        message.delete();
+    }
     if (message.content === "!Youtube" || message.content === "!youtube") {
         message.channel.send(`https://www.youtube.com/channel/UCGRIgyxhEBpni817zdEQgPg`);
         message.delete();
